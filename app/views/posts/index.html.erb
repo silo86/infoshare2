@@ -1,0 +1,12 @@
+<h1>Posts</h1>
+
+<% for post in @posts %> 
+<div >
+ <h2> <%= post.title %> </h2> 
+ <br>
+	  <%= post.text %> </div>
+<div> <%= image_tag post.image.url %> 
+<span style="color:blue"><br> by <%=post.user.email %> </div> 
+<%end %> 
+
+
